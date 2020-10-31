@@ -1,0 +1,89 @@
+body{
+  background-color: #F6F6F6;
+}
+
+.nav-bar_custom{
+  background-color: lightgray !important;
+}
+
+.nav-bar_custom__item-active{
+  background-color: gray;
+}
+
+.nav-bar_custom__item-list{
+  justify-content: center;
+  color: #000000 !important;
+}
+
+.nav-bar_custom__nav-link{
+  display: block;
+  padding: .5rem 1rem;  
+}
+
+.nav-bar_custom__nav-link{
+  color: #000000;
+}
+
+.menu-categories{
+  background-color: #ffffff;
+  width: 25%;
+  height: 110vh; 
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+}
+
+.lista-categorias{
+  margin-top: 3rem;
+}
+
+.lista-categorias li:first-child {
+  border-bottom: 1px solid #dee2e6!important;
+}
+
+.lista-categoria__item-active{
+  background-color: lightgray;
+}
+
+.icon-category{
+  background-color: gray;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container{
+  height: 700px;
+}
+
+.contact-container__form-container{
+  border-radius: 5px;
+  border: #000000 1px solid;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.contact-container__form-container input, .subject-form{
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: lightgray 1px solid;
+}
+
+.submit-button{
+  border: 0px;
+  border-radius: 0px;
+  padding: 10px 20px 10px 20px;
+}
+
+.contact-container__error-form {
+  border-bottom: red 1px solid !important;
+}
+
+.contact-container__error-form::placeholder, span {
+  color: red;
+}

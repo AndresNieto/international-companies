@@ -13,7 +13,6 @@ export function getProductsList(category) {
 
         try {
            const response = await clienteAxios.get(`/products/${category}`);
-           console.log(response);
                       
            dispatch( consultProductsSuccess(response.data))
         } catch (error) {

@@ -2,7 +2,9 @@ import React from 'react';
 
 const Clients = () => {
     return ( 
-        <h1>Clientes</h1>
+        <div className="container mt-5">
+           <h1>Clients</h1> 
+        </div>       
      );
 }
 

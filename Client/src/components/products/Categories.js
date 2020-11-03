@@ -13,7 +13,7 @@ const Categories = () => {
   
   const changeCategory = categoryName => {
     dispatch(selectCategory(categoryName));
-    categories.map(category => (
+    categories.forEach(category => (
       category.name === categoryName ? category.active = true : category.active = false
     ));    
     dispatch(activeCategory(categories));
@@ -26,7 +26,7 @@ const Categories = () => {
   }, [category]);
 
   return (
-    <sidebar className="col-md-4 border-right menu-categories">
+    <div className="sidebar col-md-4 border-right menu-categories">
       <ul className="lista-categorias">        
         {categories.map((category) => (
           <li
@@ -38,7 +38,7 @@ const Categories = () => {
           </li>
         ))}
       </ul>
-    </sidebar>
+    </div>
   );
 };
 

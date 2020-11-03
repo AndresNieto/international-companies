@@ -9,11 +9,13 @@ const Header = () => {
     { id: 3, url: "/contact", name: "Contact", active: false },
   ]);
 
-  const activeLink = (id) => {
-    menuLinks.map((link) => {
+  const activeLink = id => {
+    menuLinks.forEach((link) => {
       if (link.id === id) link.active = true;
       else link.active = false;
     });
+    console.log(menuLinks);
+    
     setMenuLinks(menuLinks);
   };
 
@@ -47,7 +49,7 @@ const Header = () => {
               <Link
                 className="nav-bar_custom__nav-link"
                 to={link.url}
-                onClick={() => activeLink}
+                onClick={() => activeLink(link.id)}
               >
                 {link.name}
               </Link>

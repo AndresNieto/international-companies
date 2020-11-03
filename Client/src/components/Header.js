@@ -14,7 +14,6 @@ const Header = () => {
       if (link.id === id) link.active = true;
       else link.active = false;
     });
-    console.log(menuLinks);
     
     setMenuLinks(menuLinks);
   };
